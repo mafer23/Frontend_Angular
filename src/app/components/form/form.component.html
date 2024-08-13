@@ -1,0 +1,37 @@
+
+<div class="bg-blue-400 w-full h-screen pt-36">
+    <div class="max-w-md mx-auto  bg-white h-80 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="md:flex justify-center">
+          <div class=" ">
+            <h1 class="text-2xl font-bold mt-4">{{ title }}</h1>
+            <div class="container mx-auto mt-2 ">
+                
+              
+                <div class="mb-4">
+                  <input [(ngModel)]="inputText"  type="email" placeholder="Introducir texto"
+                         class="border rounded-lg py-2 px-4 w-full"/>
+                </div>
+              
+                
+                <button class="bg-blue-500 text-white w-20 h-10 rounded-lg" (click)="mostrarTexto()">
+                  Send
+                </button>
+
+                <div>
+                  <p>{{ displayedText }}</p>
+                </div>
+                <div>
+
+                </div>
+
+            
+             
+    
+      
+            
+          </div>
+         
+        </div>
+      </div>
+
+</div>
